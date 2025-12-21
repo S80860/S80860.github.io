@@ -164,6 +164,37 @@
         /* Card 4 (Case Study/Lab Experiment) - R2, C2 */
         #card-case-study {
             grid-column: span 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Lab Timer Button Styling */
+        .lab-timer-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: var(--color-accent);
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .lab-timer-btn:hover {
+            background-color: #003366;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 76, 153, 0.3);
+        }
+
+        .lab-timer-btn .icon-btn {
+            margin-right: 8px;
+            font-size: 1.1rem;
         }
 
         /* Card 7 (Reflection Card) - R2, C3 */
@@ -278,11 +309,16 @@
         </div>
 
         <div id="card-case-study" class="bento-card">
-            <div class="card-title"><span class="icon">🍚</span>Recent Lab Analysis</div>
-            <div class="case-study-content">
-                <strong>Starch Gelatinization in Local Kuih</strong>
-                <p class="text-subtle">Analyzing texture profiles of Kuih Lapis samples using RVA to determine the effect of different starch-to-water ratios.</p>
+            <div>
+                <div class="card-title"><span class="icon">🍚</span>Recent Lab Analysis</div>
+                <div class="case-study-content">
+                    <strong>Starch Gelatinization in Local Kuih</strong>
+                    <p class="text-subtle">Analyzing texture profiles of Kuih Lapis samples using RVA to determine the effect of different starch-to-water ratios.</p>
+                </div>
             </div>
+            <a href="[PASTE YOUR APP URL HERE]" class="lab-timer-btn" target="_blank">
+                <span class="icon-btn">🔬</span>Try My Lab Timer App
+            </a>
         </div>
         
         <div id="card-reflection" class="bento-card">
